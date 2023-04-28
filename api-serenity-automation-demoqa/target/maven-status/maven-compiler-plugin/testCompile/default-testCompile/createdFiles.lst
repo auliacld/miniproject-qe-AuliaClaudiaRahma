@@ -1,0 +1,5 @@
+starter\user\Delete.class
+starter\CucumberTestSuite.class
+starter\user\User.class
+starter\stepdefinitions\DeleteSteps.class
+starter\stepdefinitions\UserSteps.class
