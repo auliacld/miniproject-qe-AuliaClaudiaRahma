@@ -1,6 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"As an user, I want to success login and success register, So that i can see my home page","As an user, i cannot login because wrong email or password","SUCCESS","2023-04-27T21:48:55.97+07:00[Asia/Bangkok]","0.0","27.58"
-"As an user, I want to success login and success register, So that i can see my home page","As an user, i can login with a valid email and valid password","SUCCESS","2023-04-27T21:49:23.576+07:00[Asia/Bangkok]","0.0","27.96"
-"As an user, I want to success login and success register, So that i can see my home page","As an user, i can register with a valid value","SUCCESS","2023-04-27T21:49:51.553+07:00[Asia/Bangkok]","0.0","58.94"
-"As an user, I want to success login and success register, So that i can see my home page","As an user, i cannot register because empty name field","SUCCESS","2023-04-27T21:50:50.528+07:00[Asia/Bangkok]","0.0","57.94"
-"As an user, I want to success login and success register, So that i can see my home page","As an user, i cannot register because empty email field","SUCCESS","2023-04-27T21:51:48.51+07:00[Asia/Bangkok]","0.0","52.2"
