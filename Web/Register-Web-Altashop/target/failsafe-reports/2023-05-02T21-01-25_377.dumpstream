@@ -1,0 +1,4 @@
+# Created at 2023-05-02T21:01:27.569
+Boot Manifest-JAR contains absolute paths in classpath 'D:\D\QE_Alta\mini-project\Web\Register-Web-Altashop\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
