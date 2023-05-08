@@ -39,4 +39,8 @@ public class GetUserInfoSteps {
     @And("I receive valid data for user info")
     public void iReceiveValidDataForUserInfo() { userInfo.validateData();
     }
+
+    @When("user has invalid endpoint to get user information")
+    public void userHasInvalidEndpointToGetUserInformation() { userInfo.invalidEndpoint();
+    }
 }

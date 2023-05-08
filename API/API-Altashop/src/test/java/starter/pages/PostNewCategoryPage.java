@@ -10,12 +10,16 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class PostNewCategoryPage {
     public String endpoint = "https://altashop-api.fly.dev/api/categories";
+    public  String invalidEndpoint ="https://altashop-api.fly.dev/api/categorie";
 
     @Step ("I have endpoint post new user")
     public String setPostEndpoint(){
         return endpoint;
     }
-
+    @Step ("I set invalid endpoint")
+    public String invalidEndpointCategory() {
+        return invalidEndpoint;
+    }
     @Step ("I send post new user")
     public void sendPostHttpRequest(){
         String name = "Category Aulia";
@@ -38,4 +42,5 @@ public class PostNewCategoryPage {
         Assert.assertEquals(Name, "Category Aulia");
         Assert.assertEquals(Description, "ini category aulia");
     }
+
 }

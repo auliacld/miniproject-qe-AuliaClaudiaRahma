@@ -32,11 +32,14 @@ public class GetUserInfoPage {
         token = lastResponse().getBody().jsonPath().get("data");
     }
 
-    @Step ("I set endpoint get")
+    @Step ("I set endpoint user info ")
     public String setEndpointGet(){
         return endpointAuth + "/info";
     }
 
+    @Step ("I set invalid endpoint for get info")
+    public String invalidEndpoint() { return endpointAuth + "/infologin";
+    }
     @Step ("I send GET HTTP Request")
     public void sendGetUserInfo(){
         SerenityRest.given().header("Authorization", "Bearer " + token).get(setEndpointGet());

@@ -15,7 +15,7 @@ public class PostNewCategorySteps {
         category.setPostEndpoint();
     }
 
-    @When("user send post new category")
+    @When("user send request for create new category")
     public void userSendPostNewCategory() {
         category.sendPostHttpRequest();
     }
@@ -23,5 +23,9 @@ public class PostNewCategorySteps {
     @And("I receive valid data for new category")
     public void iReceiveValidDataForNewCategory() {
         category.validateDataNewCategory();
+    }
+
+    @Given("user has invalid endpoint for create new category")
+    public void userHasInvalidEndpointForCreateNewCategory() { category.invalidEndpointCategory();
     }
 }

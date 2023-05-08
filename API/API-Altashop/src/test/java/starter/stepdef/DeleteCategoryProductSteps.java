@@ -35,4 +35,12 @@ public class DeleteCategoryProductSteps {
     public void userSeeHTTPCode(int arg0) {
         deleteCategory.gainHTTPCode();
     }
+
+    @When("user has invalid endpoint for delete endpoint category product")
+    public void userHasInvalidEndpointForDeleteEndpointCategoryProduct() { deleteCategory.invalidEndpointDelete();
+    }
+
+    @Then("user see HTTP respon code {int}")
+    public void userSeeHTTPResponCode(int arg0) { deleteCategory.seeErrorMessage();
+    }
 }

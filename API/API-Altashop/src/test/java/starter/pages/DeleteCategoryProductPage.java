@@ -35,6 +35,10 @@ public class DeleteCategoryProductPage {
         return endpointAuth + "/categories/11301";
     }
 
+    @Step ("I Set invalid endpoint")
+    public String invalidEndpointDelete() {
+        return endpointAuth + "/categorie/11301";
+    }
     @Step ("I send delete HTTP Request")
     public void SENDEndpointDelete() {
         SerenityRest.given().header("Authorization", "Bearer " + token).delete(SETEndpointDelete());    }
@@ -42,5 +46,10 @@ public class DeleteCategoryProductPage {
     @Step("i see status code 200")
     public void gainHTTPCode() {
         restAssuredThat(response -> response.statusCode(200));
+    }
+
+    @Step("i see status code 404")
+    public void seeErrorMessage() {
+        restAssuredThat(response -> response.statusCode(404));
     }
 }

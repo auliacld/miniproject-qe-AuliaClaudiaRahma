@@ -29,4 +29,8 @@ public class PostNewUserRegisterSteps {
     @And("I receive valid data for new register")
     public void iReceiveValidDataForNewRegister() { register.validateDataRegister();
     }
+
+    @Given("user has invalid endpoint for create new user register")
+    public void userHasInvalidEndpointForCreateNewUserRegister() { register.invalidEndpointRegis();
+    }
 }

@@ -17,7 +17,7 @@ public class GetCategoryByIdSteps {
         categoryID.getEndpointGetCategoryApi();
     }
 
-    @When("user get category by id")
+    @When("user set endpoint category by id")
     public void userGetCategoryById() {
         categoryID.getRequestGetCategoryById();
     }
@@ -43,5 +43,13 @@ public class GetCategoryByIdSteps {
 
     @And("I receive valid data for category by id")
     public void iReceiveValidDataForCategoryById() { categoryID.validateDataCategoryByID();
+    }
+
+    @Given("user has invalid endpoint for get detail category")
+    public void userHasInvalidEndpointForGetDetailCategory() { categoryID.invalidEndpoint();
+    }
+
+    @Given("user has invalid endpoint category by id")
+    public void userHasInvalidEndpointCategoryById() { categoryID.invalidEndpointByID();
     }
 }

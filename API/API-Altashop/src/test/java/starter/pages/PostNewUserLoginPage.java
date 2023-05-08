@@ -9,12 +9,14 @@ import org.junit.Assert;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 public class PostNewUserLoginPage {
     public String endpoint = "https://altashop-api.fly.dev/api/auth/login";
-
+    public String notvalidEndpoint = "https://altashop-api.fly.dev/api/login";
     @Step ("I have endpoint post new user")
     public String setPostEndpoint(){
         return endpoint;
     }
-
+    @Step ("I have invalid endpoint post new user")
+    public String invalidEndpointLogin() { return  notvalidEndpoint;
+    }
     @Step ("I send post new user")
     public void sendPostHttpRequest(){
         String email = "dummy@gmail.com2";
@@ -38,4 +40,5 @@ public class PostNewUserLoginPage {
         String data = response.getBody().jsonPath().get("data");
         Assert.assertEquals(data, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6ImF1bGlhIGNsYXVkaWEiLCJFbWFpbCI6ImR1bW15QGdtYWlsLmNvbTIifQ.tA_eR6yTnMB4IR88uXOz9RkReKqfeE_l8wlGIDnWWAg");
     }
+
 }

@@ -30,9 +30,13 @@ public class GetAllOrderPage {
         token = lastResponse().getBody().jsonPath().get("data");
     }
 
-    @Step ("I set endpoint get")
+    @Step ("I set endpoint order")
         public String setEndpointOrders(){
             return endpointAuth + "/orders";
+    }
+    @Step ("I set invalid endpoint order")
+    public String invalidEndpoint() {
+        return endpointAuth + "/order";
     }
     @Step ("I send GET HTTP Request")
     public void sendGetDetailOrder() {
@@ -42,4 +46,5 @@ public class GetAllOrderPage {
     public void validateStatusCode200() {
         restAssuredThat(response -> response.statusCode(200));
     }
+
 }

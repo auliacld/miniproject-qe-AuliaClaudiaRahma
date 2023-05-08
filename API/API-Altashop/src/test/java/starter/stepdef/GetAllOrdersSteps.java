@@ -37,4 +37,8 @@ public class GetAllOrdersSteps {
     public void userGetUserDetailAllOrdersWithStatusCode(int arg0) {
         allOrder.validateStatusCode200();
     }
+
+    @When("user has invalid endpoint for get all orders")
+    public void userHasInvalidEndpointForGetAllOrders() { allOrder.invalidEndpoint();
+    }
 }

@@ -9,7 +9,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class GetCategoryByIdPage {
     public String endpoint = "https://altashop-api.fly.dev/api/categories";
-
+    public  String invalidEndpoint = "https://altashop-api.fly.dev/api/categorie";
     @Step ("I set GET Category endpoint by id")
     public String getEndpointGetCategoryApi(){
         return endpoint + "/12505";
@@ -19,6 +19,14 @@ public class GetCategoryByIdPage {
     public String getApiAllCategory() {
         return endpoint;
     }
+
+    @Step ("I set nvalid Endpoint")
+    public String invalidEndpoint() {
+        return invalidEndpoint;
+    }
+
+    @Step ("I set nvalid Endpoint by ID")
+    public String invalidEndpointByID() { return invalidEndpoint + "/12505";}
 
     @Step ("I send GET Category HTTP Request")
     public void getRequestGetCategoryById(){
@@ -54,4 +62,5 @@ public class GetCategoryByIdPage {
        // Assert.assertEquals(Name, "Furniture");
         Assert.assertEquals(Description, "for gaming purposes");
     }
+
 }

@@ -17,7 +17,7 @@ public class PostNewUserLoginSteps {
         login.setPostEndpoint();
     }
 
-    @When("user send post new user login")
+    @When("user send request for create new user login")
     public void userSendPostNewUserLogin() {
         login.sendPostHttpRequest();
     }
@@ -29,5 +29,9 @@ public class PostNewUserLoginSteps {
 
     @And("I receive valid data for new login")
     public void iReceiveValidDataForNewLogin() { login.validateDataLogin();
+    }
+
+    @Given("user has invalid endpoint for create new user login")
+    public void userHasInvalidEndpointForCreateNewUserLogin() { login.invalidEndpointLogin();
     }
 }

@@ -10,12 +10,15 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class PostNewUserRegisterPage {
     public String endpoint = "https://altashop-api.fly.dev/api/auth/register";
-
+    public String endpointInvalid = "https://altashop-api.fly.dev/api/auth/regis";
     @Step ("I have endpoint post new user")
     public String setPostEndpoint(){
         return endpoint;
     }
 
+    @Step ("I set invalid endpoint")
+    public String invalidEndpointRegis() { return  endpointInvalid;
+    }
     @Step ("I send post new user")
     public void sendPostHttpRequest(){
         String email = "auliacld101@gmail.comx";
@@ -47,4 +50,5 @@ public class PostNewUserRegisterPage {
         Assert.assertEquals(Password, "aa");
         Assert.assertEquals(Fullname, "Aulia Claudia Rahma");
     }
+
 }
