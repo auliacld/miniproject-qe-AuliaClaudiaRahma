@@ -56,4 +56,14 @@ public class LoginSteps {
     public void userSeeValidateMessage(String validateMessage) {
         Assert.assertEquals(validateMessage, loginScreen.SeeValidateMessage());
     }
+
+    @When("user click on email field")
+    public void userClickOnEmailField() {
+        loginScreen.clickFieldEmail();
+    }
+
+    @And("user click on password field")
+    public void userClickOnPasswordField() {
+        loginScreen.clickFieldPassword();
+    }
 }

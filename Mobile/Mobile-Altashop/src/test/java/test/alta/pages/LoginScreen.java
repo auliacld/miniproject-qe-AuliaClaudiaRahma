@@ -77,4 +77,12 @@ public class LoginScreen extends BasePageObject {
     public String SeeValidateMessage() {
         return waitUntilVisible(ValidateMessage()).getText();
     }
+
+    @Step
+    public void clickFieldEmail() { onClick(emailField());
+    }
+
+    @Step
+    public void clickFieldPassword() { onClick(passwordField());
+    }
 }

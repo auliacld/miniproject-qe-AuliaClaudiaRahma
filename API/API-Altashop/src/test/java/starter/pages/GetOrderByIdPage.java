@@ -30,7 +30,7 @@ public class GetOrderByIdPage {
     }
     @Step("I set endpoint get")
     public String setEndpointOrder(){
-        return endpointAuth + "/orders/9498";
+        return endpointAuth + "/orders/10941";
     }
     @Step ("I send GET HTTP Request")
     public void sendEndpointOrder() {

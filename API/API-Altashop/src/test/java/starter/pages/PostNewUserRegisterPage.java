@@ -18,7 +18,7 @@ public class PostNewUserRegisterPage {
 
     @Step ("I send post new user")
     public void sendPostHttpRequest(){
-        String email = "auliacld118@gmail.com";
+        String email = "auliacld101@gmail.comx";
         String password = "aa";
         String fullname = "Aulia Claudia Rahma";
 
@@ -43,7 +43,7 @@ public class PostNewUserRegisterPage {
         String Email = response.getBody().jsonPath().get("data.Email");
         String Password = response.getBody().jsonPath().get("data.Password");
         String Fullname = response.getBody().jsonPath().get("data.Fullname");
-        Assert.assertEquals(Email, "auliacld118@gmail.com");
+        Assert.assertEquals(Email, "auliacld101@gmail.comx");
         Assert.assertEquals(Password, "aa");
         Assert.assertEquals(Fullname, "Aulia Claudia Rahma");
     }

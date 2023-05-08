@@ -8,7 +8,11 @@ import test.alta.pageobject.BasePageObject;
 public class RegisterScreen extends BasePageObject {
 
     private By clickRegister(){
-        return MobileBy.xpath("//android.widget.Button[@content-desc=\"Register\"]");
+        return MobileBy.xpath(
+                "//android.widget.Button[@content-desc=\"Register\"]");
+    }
+    private By loginButton() {
+        return  MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button");
     }
     private By nameField(){
         return MobileBy.xpath("\t\n" + "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]");
@@ -49,7 +53,7 @@ public class RegisterScreen extends BasePageObject {
     } */
 
     @Step
-    public void clickRegisterButton(){
+    public void registerButton(){
         onClick(clickRegister());
     }
 
@@ -94,5 +98,13 @@ public class RegisterScreen extends BasePageObject {
     @Step
     public String getPasswordAlertMessage() {
         return waitUntilVisible(PasswordAlertMessage()).getText();
+    }
+
+    @Step
+    public void clickNameField() { onClick(nameField());
+    }
+
+    @Step
+    public void ClickButtonLogin() { onClick(loginButton());
     }
 }

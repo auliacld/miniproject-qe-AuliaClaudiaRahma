@@ -17,11 +17,11 @@ public class LoginSteps {
         }
         @When("user input valid email")
         public void userInputValidEmail() {
-            login.inputEmail("aulia");
+            login.inputEmail("aulia@gmail.com");
         }
         @When("user input valid password")
         public void userInputValidPassword() {
-            login.inputPassword("123");
+            login.inputPassword("aulia");
         }
         @When("user click login button")
         public void userClickLoginButton() {

@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"As a user i have be able to success register so that i can see login page","as user i want to register with correct values","SUCCESS","2023-05-08T14:49:09.209+07:00[Asia/Bangkok]","0.0","18.29"
+"As a user i have be able to success register so that i can see login page","as user i want to register with using existing email","SUCCESS","2023-05-08T14:49:30.759+07:00[Asia/Bangkok]","0.0","4.18"
+"As a user i have be able to success register so that i can see login page","as user i want to register with empty complete name value","SUCCESS","2023-05-08T14:49:35.659+07:00[Asia/Bangkok]","0.0","4.13"
+"As a user i have be able to success register so that i can see login page","as user i want to register with empty email value","SUCCESS","2023-05-08T14:49:40.474+07:00[Asia/Bangkok]","0.0","3.7"
+"As a user i have be able to success register so that i can see login page","as user i want to register with empty password value","SUCCESS","2023-05-08T14:49:44.843+07:00[Asia/Bangkok]","0.0","5.46"

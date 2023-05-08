@@ -19,7 +19,7 @@ public class RegisterSteps {
     }
 
     @And("user input valid email")
-    public void userInputValidEmail() { register.inputEmail("auliacld19@gmail.comxx");
+    public void userInputValidEmail() { register.inputEmail("auliacld20@gmail.comxx");
     }
 
     @And("user input valid password")
@@ -35,7 +35,7 @@ public class RegisterSteps {
     }
 
     @And("user input existing email")
-    public void userInputExistingEmail() { register.inputExistingEmail("auliacld18@gmail.com");
+    public void userInputExistingEmail() { register.inputExistingEmail("aulia@gmail.com");
     }
 
     @Then("user see error message")

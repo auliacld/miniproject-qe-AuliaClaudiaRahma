@@ -34,12 +34,12 @@ public class DeleteProductsPage {
 
     @Step ("I set endpoint delete products")
     public String setEndpointDeleteProduct() {
-        return endpointAuth + "/products/13368";
+        return endpointAuth + "/products/13392";
     }
 
     @Step ("I set invalid endpoint delete products")
     public String setInvalidEndpointProduct() {
-        return endpointAuth + "/product/13368";
+        return endpointAuth + "/product/13392";
     }
 
     @Step ("i set invalid or not found id product")

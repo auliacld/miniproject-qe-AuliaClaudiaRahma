@@ -37,11 +37,11 @@ public class PostOrderPage {
 
     @Step ("I send POST HTTP Request")
     public void userSendEndpointNewOrder() {
-        String productid = "3";
+        String productid = "13384";
         String quantity = "3";
 
         String body = "    {\n" +
-                "        \"product_id\":2,\n" +
+                "        \"product_id\":13384,\n" +
                 "        \"quantity\":1\n" +
                 "    }";
 

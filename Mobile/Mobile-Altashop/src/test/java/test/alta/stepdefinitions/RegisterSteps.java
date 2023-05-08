@@ -22,7 +22,7 @@ public class RegisterSteps {
 
     @When("user click Register button")
     public void ClickCreateButton() {
-        registerScreen.clickRegisterButton();
+        registerScreen.registerButton();
     }
 
     @And("user input name {string} on name field")
@@ -68,5 +68,15 @@ public class RegisterSteps {
     @Then("user see alert password message {string}")
     public void userSeeAlertPasswordMessage(String PasswordAlert) {
         Assert.assertEquals(PasswordAlert, registerScreen.getPasswordAlertMessage());
+    }
+
+    @And("user click on name field")
+    public void userClickOnNameField() {
+        registerScreen.clickNameField();
+    }
+
+    @Given("user on the main page and click button login for register")
+    public void userOnTheMainPageAndClickButtonLoginForRegister() {
+        registerScreen.ClickButtonLogin();
     }
 }

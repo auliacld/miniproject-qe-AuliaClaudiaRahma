@@ -1,28 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: CucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 57.814 sec <<< FAILURE! - in CucumberTestSuite
-user see home page(As an user, i can login with a valid email and valid password)  Time elapsed: 15.768 sec  <<< ERROR!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Products"] (tried for 15 second(s) with 500 milliseconds interval)
+Tests run: 11, Failures: 0, Errors: 2, Skipped: 5, Time elapsed: 143.401 sec <<< FAILURE! - in CucumberTestSuite
+user click on email field(As an user, i can register with a valid value)  Time elapsed: 75.77 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[1] (tried for 15 second(s) with 500 milliseconds interval)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LV-ACR-PC50E5T5', ip: '192.168.43.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: D:\D\QE_Alta\mini-project\M..., appPackage: com.example.frontend_mobile, automationName: UiAutomator2, databaseEnabled: false, desired: {app: D:\D\QE_Alta\mini-project\M..., automationName: UiAutomator2, platformName: android, platformVersion: 12.0}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 400, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 60, takesScreenshot: true, viewportRect: {height: 1980, left: 0, top: 60, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c0be9808-861d-4e6e-851c-7a61c0f860d9
-*** Element info: {Using=xpath, value=//android.view.View[@content-desc="Products"]}
+Capabilities {app: D:\D\QE_Alta\MiniProject\Mo..., appPackage: com.example.frontend_mobile, automationName: UiAutomator2, databaseEnabled: false, desired: {app: D:\D\QE_Alta\MiniProject\Mo..., automationName: UiAutomator2, platformName: android, platformVersion: 12.0}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 400, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 60, takesScreenshot: true, viewportRect: {height: 1980, left: 0, top: 60, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 6755d31a-aba8-4cbe-88e3-6cc202cc75c1
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]}
 
-As an user, i can login with a valid email and valid password  Time elapsed: 17.331 sec  <<< ERROR!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Products"] (tried for 15 second(s) with 500 milliseconds interval)
+As an user, i can register with a valid value  Time elapsed: 0.003 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[1] (tried for 15 second(s) with 500 milliseconds interval)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LV-ACR-PC50E5T5', ip: '192.168.43.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: D:\D\QE_Alta\mini-project\M..., appPackage: com.example.frontend_mobile, automationName: UiAutomator2, databaseEnabled: false, desired: {app: D:\D\QE_Alta\mini-project\M..., automationName: UiAutomator2, platformName: android, platformVersion: 12.0}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 400, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 60, takesScreenshot: true, viewportRect: {height: 1980, left: 0, top: 60, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c0be9808-861d-4e6e-851c-7a61c0f860d9
-*** Element info: {Using=xpath, value=//android.view.View[@content-desc="Products"]}
+Capabilities {app: D:\D\QE_Alta\MiniProject\Mo..., appPackage: com.example.frontend_mobile, automationName: UiAutomator2, databaseEnabled: false, desired: {app: D:\D\QE_Alta\MiniProject\Mo..., automationName: UiAutomator2, platformName: android, platformVersion: 12.0}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 400, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.5, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 60, takesScreenshot: true, viewportRect: {height: 1980, left: 0, top: 60, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 6755d31a-aba8-4cbe-88e3-6cc202cc75c1
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]}
 

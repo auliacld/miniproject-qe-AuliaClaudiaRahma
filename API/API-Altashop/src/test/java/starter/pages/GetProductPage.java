@@ -14,7 +14,7 @@ public class GetProductPage {
 
     @Step ("I set GET API endpoint by id")
     public String setByIDApiEndpoint(){
-        return endpoint + "/13348";
+        return endpoint + "/13675";
     }
 
 
@@ -60,9 +60,9 @@ public class GetProductPage {
         int ID = response.getBody().jsonPath().get("data.ID[0]");
         String Name = response.getBody().jsonPath().get("data.Name[0]");
         int Price = response.getBody().jsonPath().get("data.Price[0]");
-        Assert.assertEquals(ID,13347);
-        Assert.assertEquals(Name, "XBox 1");
-        Assert.assertEquals(Price, 499);
+        Assert.assertEquals(ID,13361);
+        Assert.assertEquals(Name, "Sony PS5");
+        Assert.assertEquals(Price, 299);
     }
     @Step ("I receive valid data for id products")
     public void validateDataIDProducts() {
@@ -71,10 +71,10 @@ public class GetProductPage {
         String Name = response.getBody().jsonPath().get("data.Name");
         int Price = response.getBody().jsonPath().get("data.Price");
         int Ratings = response.getBody().jsonPath().get("data.Ratings");
-        Assert.assertEquals(ID,13348);
-        Assert.assertEquals(Name, "XBox 1");
-        Assert.assertEquals(Price, 499);
-        Assert.assertEquals(Ratings, 3);
+        Assert.assertEquals(ID,13675);
+        Assert.assertEquals(Name, "Product Aulia 3");
+        Assert.assertEquals(Price, 0);
+        Assert.assertEquals(Ratings, 0);
     }
 
     @Step

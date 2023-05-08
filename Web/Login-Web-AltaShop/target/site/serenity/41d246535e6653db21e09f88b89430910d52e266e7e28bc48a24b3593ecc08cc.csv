@@ -1,2 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"As a user i have be able to success login so that i can see main page","as user i want to input valid to then i can see success login","SUCCESS","2023-04-25T22:14:31.286+07:00[Asia/Bangkok]","0.0","11.06"
+"As a user i have be able to success login so that i can see main page","as user i want to input valid to then i can see success login","SUCCESS","2023-05-08T14:27:44.321+07:00[Asia/Bangkok]","0.0","17.38"
+"As a user i have be able to success login so that i can see main page","as user i want to input invalid email then get error message","SUCCESS","2023-05-08T14:28:02.493+07:00[Asia/Bangkok]","0.0","4.07"
+"As a user i have be able to success login so that i can see main page","as user i want to input empty email then get error message","SUCCESS","2023-05-08T14:28:07.511+07:00[Asia/Bangkok]","0.0","4.04"
+"As a user i have be able to success login so that i can see main page","as user i want to input empty password then get error message","SUCCESS","2023-05-08T14:28:12.478+07:00[Asia/Bangkok]","0.0","3.82"

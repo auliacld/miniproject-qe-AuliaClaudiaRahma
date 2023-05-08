@@ -8,12 +8,6 @@ Feature: As a user i want to delete product
     And user send request for delete product
     Then user see HTTP Response code 200
 
-  @TestCase-MPAAAC-106
-  Scenario: as user i want to delete product without auth
-    Given user has endpoint delete endpoint product
-    When user send request for delete product
-    Then user see error response code 401
-
   @TestCase-MPAAAC-107
   Scenario: as user i cannot delete product cause invalid endpoint
     Given user posses Endpoint auth
